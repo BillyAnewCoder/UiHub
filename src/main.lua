@@ -1,13 +1,12 @@
 --[[
 
-	UiHub V2 by Irrelevant
-
+    UiHub V2 by Irrelevant
 
 ]]
 
 --// Loaded Check
 
-if AirHubV2Loaded or AirHub then
+if UIHubLoaded then
 	return
 end
 
@@ -891,7 +890,7 @@ SettingsSection:Button({
 		GUI:Unload()
 		ESP:Exit()
 		Aimbot:Exit()
-		getgenv().AirHubV2Loaded = nil
+		getgenv().UIHubLoaded = nil
 	end
 })
 
@@ -981,4 +980,4 @@ end)
 
 ESP.Load()
 Aimbot.Load()
-getgenv().AirHubV2Loaded = true
+getgenv().UIHubLoaded = true
